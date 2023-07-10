@@ -59,6 +59,10 @@ a.a-link span {
     white-space: nowrap;
 }
 
+a.a-link-mail span {
+    color: var(--blue);
+}
+
 a.a-link span::before, 
 a.a-link span::after {
     content: "";
@@ -69,6 +73,11 @@ a.a-link span::after {
     opacity: 0;
     background: var(--red);
     transition: all 0.25s ease-in;
+}
+
+a.a-link-mail span::before,
+a.a-link-mail span::after {
+    background: var(--blue);
 }
 
 a.a-link span::before {

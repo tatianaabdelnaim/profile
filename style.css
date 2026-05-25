@@ -352,23 +352,3 @@ main .summary .introduction ul li {
 
 }
 
-```css id="e4vl96"
-.research-section{
-    margin-top: 1.5rem;
-    padding: 2.5rem 2rem;
-    background-color: var(--gray);
-}
-
-.research-section h3{
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: var(--blue);
-}
-
-.paper-box{
-    margin-top: 20px;
-    padding: 25px;
-    border-radius: 10px;
-    background-color: white;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-}

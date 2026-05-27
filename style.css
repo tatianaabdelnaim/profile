@@ -51,6 +51,7 @@ a.a-button {
     text-decoration: none !important;
 }
 
+/* 
 a.a-link span {
     position: relative;
     font-style: italic;
@@ -86,16 +87,43 @@ a.a-link span::before {
 
 a.a-link span::after {
     left: 50%;
-}
+} */
 
 /* a.a-link:hover span {
     color: var(--blue);
 } */
 
-a.a-link:hover span::before, 
+/* a.a-link:hover span::before, 
 a.a-link:hover span::after {
     width: 50%;
     opacity: 1;
+} */
+
+a.a-link span {
+    position: relative;
+    font-style: italic;
+    color: var(--red);
+    transition: color 0.25s ease-in;
+
+    white-space: normal;
+
+    background-image: linear-gradient(var(--red), var(--red));
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    background-position: center bottom;
+
+    transition:
+        color 0.25s ease-in,
+        background-size 0.25s ease-in;
+}
+
+a.a-link-mail span {
+    color: var(--blue);
+    background-image: linear-gradient(var(--blue), var(--blue));
+}
+
+a.a-link:hover span {
+    background-size: 100% 2px;
 }
 
 a.a-button {
@@ -232,7 +260,7 @@ main .summary .introduction p {
 
 main .summary .introduction h4 {
     font-size: 2rem;
-    margin-top: 2rem;
+    /* margin-top: 2rem; */
     color: var(--blue);
     border-bottom: solid 2px var(--blue);
     width: fit-content;
@@ -240,6 +268,7 @@ main .summary .introduction h4 {
 
 main .summary .introduction ul {
     list-style-type: "★ ";
+    margin-bottom: 2rem;
 }
 
 main .summary .introduction ul li {
@@ -288,19 +317,19 @@ main .summary .introduction ul li {
 
     main .summary .introduction p {
         margin-top: 1rem;
-        text-align: center;
+        /* text-align: center; */
     }
 
     main .summary .introduction h4 {
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
+        /* margin-left: auto; */
+        /* margin-right: auto; */
+        /* text-align: center; */
     }
 
     main .summary .introduction ul {
-        padding: 0;
-        list-style-type: none;
-        text-align: center;
+        /* padding: 0; */
+        /* list-style-type: none; */
+        /* text-align: center; */
     }
 
 }

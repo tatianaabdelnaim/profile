@@ -1,4 +1,3 @@
-/* Colors used in page */
 :root {
     /* --primary-white: #fff;
     --primary-black: #2F2E2C;
@@ -9,12 +8,36 @@
     --secondary-blue: #8ab9f1;
     --secondary-yellow: #f8de7e; */
 
-    --white: #fff;
+    /* --white: #fff;
     --black: #232323;
     --blue: #29323d;
     --red: #841618;
     --red-secondary: #a1595a;
-    --gray: #dcdcdc;
+    --gray: #dcdcdc; */
+
+    /* --white: #FCFBF8;
+    --black: #1F2328;
+
+    --blue: #2C3E50;
+    --blue-light: #5D7288;
+
+    --red: #7A1F22;
+    --red-secondary: #A06B6D;
+
+    --gray: #E7E4DF;
+    --gray-dark: #7A7A7A; */
+
+    --white: #F9F7F3;
+    --black: #242424;
+
+    --blue: #31475E;
+    --blue-light: #6B7E91;
+
+    --red: #6F1D1B;
+    --red-secondary: #A17370;
+
+    --gray: #E5E1DA;
+    --gray-dark: #737373;
 }
 
 
@@ -36,166 +59,112 @@
 }
 /* End scrollbar customization */
 
-* {
+/* * {
     font-family: 'Work Sans', sans-serif;
-}
+} */
 
 body {
-    /* min-height: 2000px; */
     overflow-x: hidden !important;
     background-color: var(--white);
+    font-family: "Inter", sans-serif;
 }
 
-a.a-link,
-a.a-button {
+.a-link,
+.a-button {
     text-decoration: none !important;
 }
 
-/* 
-a.a-link span {
+.a-link span {
     position: relative;
+    padding-bottom: 0.125rem;
     font-style: italic;
     color: var(--red);
-    transition: color 0.25s ease-in;
-    white-space: nowrap;
-}
-
-a.a-link-mail span {
-    color: var(--blue);
-}
-
-a.a-link span::before, 
-a.a-link span::after {
-    content: "";
-    position: absolute;
-    bottom: -0.25rem;
-    width: 0;
-    height: 2px;
-    opacity: 0;
-    background: var(--red);
-    transition: all 0.25s ease-in;
-}
-
-a.a-link-mail span::before,
-a.a-link-mail span::after {
-    background: var(--blue);
-}
-
-a.a-link span::before {
-    right: 50%;
-}
-
-a.a-link span::after {
-    left: 50%;
-} */
-
-/* a.a-link:hover span {
-    color: var(--blue);
-} */
-
-/* a.a-link:hover span::before, 
-a.a-link:hover span::after {
-    width: 50%;
-    opacity: 1;
-} */
-
-a.a-link span {
-    position: relative;
-    font-style: italic;
-    color: var(--red);
-    transition: color 0.25s ease-in;
-
     white-space: normal;
-
     background-image: linear-gradient(var(--red), var(--red));
     background-repeat: no-repeat;
     background-size: 0% 2px;
     background-position: center bottom;
-
-    transition:
-        color 0.25s ease-in,
-        background-size 0.25s ease-in;
+    transition: color 0.25s ease-in, background-size 0.25s ease-in;
 }
 
-a.a-link-mail span {
+.a-link-mail span {
     color: var(--blue);
     background-image: linear-gradient(var(--blue), var(--blue));
 }
 
-a.a-link:hover span {
+.a-link:hover span {
     background-size: 100% 2px;
 }
 
-a.a-button {
+.a-button {
     position: relative;
     padding: 0.5rem 1.5rem;
     border-radius: 0.25rem;
-    background-color: var(--gray);
+    background-color: transparent;
     color: var(--red);
     transition: all 0.75s ease-in-out;
 }
 
-a.a-button:hover {
+.a-button:hover {
     color: var(--gray);
     background-color: var(--red);
 }
 
-a.a-button span {
+.a-button span {
     position: absolute;
     opacity: 1;
     background-color: var(--red);
-    transition: all 0.5s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
-a.a-button span:nth-child(1) {
+.a-button span:nth-child(1) {
     bottom: 0;
     left: 0;
     height: calc(100% + 0.3125rem);
     width: 1px;
 }
 
-a.a-button span:nth-child(2) {
+.a-button span:nth-child(2) {
     top: 0;
     right: 0;
     height: 1px;
     width: calc(100% + 0.3125rem);
 }
 
-a.a-button span:nth-child(3) {
+.a-button span:nth-child(3) {
     top: 0;
     right: 0;
     height: calc(100% + 0.3125rem);
     width: 1px;
 }
 
-a.a-button span:nth-child(4) {
+.a-button span:nth-child(4) {
     bottom: 0;
     left: 0;
     height: 1px;
     width: calc(100% + 0.3125rem);
 }
 
-a.a-button:hover span:nth-child(1) {
+.a-button:hover span:nth-child(1),
+.a-button:hover span:nth-child(3) {
     height: 0;
 }
 
-a.a-button:hover span:nth-child(2) {
+.a-button:hover span:nth-child(2),
+.a-button:hover span:nth-child(4) {
     width: 0;
 }
 
-a.a-button:hover span:nth-child(3) {
-    height: 0;
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
 }
 
-a.a-button:hover span:nth-child(4) {
-    width: 0;
-}
-
-header {
-    margin-top: 1.5rem;
-}
-
-header h1 {
+.header__title {
+    font-family: "Merriweather", serif;
     font-size: 3.25rem;
     color: var(--black);
     letter-spacing: 0.25rem;
@@ -204,7 +173,8 @@ header h1 {
     padding: 0 0.875rem;
 }
 
-header h2 {
+.header__subtitle {
+    font-family: "Inter", sans-serif;
     font-size: 1.5rem;
     text-align: center;
     color: var(--red);
@@ -212,170 +182,163 @@ header h2 {
     padding: 0 0.875rem;
 }
 
-main .summary {
-    margin-top: 1.5rem;
-    padding: 2.5rem 2rem;
-    background-color: var(--gray);
-}
-
-main .summary .profile-wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-main .summary .profile-wrapper img {
-    width: 300px;
+.header__image {
+    width: 220px;
     border-radius: 0.5rem;
     box-shadow: 4px 4px 12px 0px rgba(0,0,0,0.3);
+    margin-bottom: 1rem;
 }
 
-main .summary .profile-wrapper a.a-link {
-    margin-top: 0.5rem;
-}
-
-main .summary .profile-wrapper a.a-button {
+.header__files {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
     margin-top: 1rem;
 }
 
-main .summary .introduction h3 {
+main {
+    padding: 2rem 0;
+    margin-top: 1.5rem;
+    background-color: var(--gray);
+}
+
+.about__title {
+    font-family: "Merriweather", serif;
     font-size: 2.5rem;
     font-weight: bold;
     color: var(--blue);
 }
 
-main .summary .introduction h3 span {
+.about__title span {
     font-size: 3rem;
     color: var(--red);
 }
 
-main .summary .introduction p {
-    margin-top: 2rem;
+.about__details {
+    margin-top: 1rem;
     color: var(--blue);
     font-size: 1.5rem;
     text-align: justify;
     text-justify: inter-word;
 }
 
-main .summary .introduction h4 {
+.section-title {
+    font-family: "Merriweather", serif;
+    position: relative;
     font-size: 2rem;
-    /* margin-top: 2rem; */
+    margin: 2rem 0 1.5rem;
     color: var(--blue);
-    border-bottom: solid 2px var(--blue);
-    width: fit-content;
+    padding-bottom: 0.75rem;
 }
 
-main .summary .introduction ul {
+.section-title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, var(--blue), transparent);
+}
+
+.section-list {
     list-style-type: "★ ";
-    margin-bottom: 2rem;
 }
 
-main .summary .introduction ul li {
+.section-list:has(> li:only-child) {
+    list-style: none;
+    padding-left: 0;
+    margin-left: 0;
+    padding-left: 1rem;
+}
+
+/* .section-list > li:only-child {
+    list-style: none;
+} */
+
+.section-list li {
     color: var(--blue);
     font-size: 1.5rem;
 }
 
-
-@media screen and (max-width: 1199px){
-    main .summary .profile-wrapper img {
-        width: 280px;
-    }
+.outreach__list {
+    list-style-type: none;
+    padding-left: 1rem;
 }
 
-@media screen and (max-width: 991px){
-    main .summary .profile-wrapper img {
-        width: 250px;
-    }
+.outreach__list-item {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+
+.outreach__list-item img {
+    width: 300px;
+    border-radius: 0.5rem;
+    box-shadow: 4px 4px 12px 0px rgba(0,0,0,0.3);
+}
+
+.outreach__list-item p {
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 @media screen and (max-width: 767px){
 
-    header {
-        margin-top: 1rem;
-    }
-
-    header h1 {
+    .header__title {
         font-size: 3rem;
     }
 
-    header h2 {
+    .header__subtitle {
         font-size: 1.375rem;
     }
 
-    main .summary .profile-wrapper img {
-        width: 300px;
+    .outreach__list {
+        padding-left: 0;
     }
 
-    main .summary .introduction {
-        margin-top: 1.25rem;
-    }
-
-    main .summary .introduction h3 {
-        text-align: center;
-    }
-
-    main .summary .introduction p {
-        margin-top: 1rem;
-        /* text-align: center; */
-    }
-
-    main .summary .introduction h4 {
-        /* margin-left: auto; */
-        /* margin-right: auto; */
-        /* text-align: center; */
-    }
-
-    main .summary .introduction ul {
-        /* padding: 0; */
-        /* list-style-type: none; */
-        /* text-align: center; */
+    .outreach__list-item {
+        flex-direction: column;  
+        align-items: center;   
     }
 
 }
 
 @media screen and (max-width: 575px){
 
-    header h1 {
+    .header__title {
         font-size: 2rem;
         letter-spacing: 2px;
         margin-bottom: 0.5rem;
     }
 
-    header h2 {
+    .header__subtitle {
         font-size: 1.25rem;
-    }
-
-    main .summary {
-        padding: 2rem 0.5rem 2rem;
-        margin-top: 1rem;
     }
 
 }
 
 @media screen and (max-width: 400px){
 
-    header h1 {
+    .header__title {
         font-size: 1.875rem;
     }
 
-    header h2 {
+    .header__subtitle {
         font-size: 1.25rem;
     }
 
-    main .summary .profile-wrapper img {
+    .outreach__list-item img {
         width: 250px;
-    }
-
-    main .summary {
-        padding: 2rem 0.25rem 2rem;
     }
 
 }
 
 @media screen and (max-width: 330px){
 
-    header h1 {
+    .header__title {
         letter-spacing: 1px;
     }
 

@@ -7,7 +7,14 @@
     <title>Tatiana Abdelnaim | PhD Student</title>
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;700&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;700&display=swap" rel="stylesheet"> -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet"> -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
 
     <!-- Bootstrap 4 -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -16,7 +23,7 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <!-- Main CSS -->
-    <link rel="stylesheet" href="style.css?v=7.0.0">
+    <link rel="stylesheet" href="style.css?v=9.0.0">
 
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/c5c180f8df.js" crossorigin="anonymous"></script>
@@ -28,56 +35,68 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js" defer></script>
 
     <!-- Main JS -->
-    <script src="script.js?v=7.0.0" defer></script>
-
+    <script src="script.js?v=9.0.0" defer></script>
 
 </head>
 <body>
 
-    <header>
-        <h1 data-aos="fade-up" data-aos-duration="1000">Tatiana Abdelnaim</h1>
-        <h2 data-aos="fade-down" data-aos-duration="1000">PhD Student at the University of Oklahoma</h2>
+    <header class="header">
+        <img src="headshot.jpg?v=1.0.0" alt="Tatiana's Headshot" class="header__image" data-aos="zoom-out" data-aos-duration="1000">
+        <h1 class="header__title" data-aos="fade-up" data-aos-duration="1000">Tatiana Abdelnaim</h1>
+        <h2 class="header__subtitle" data-aos="fade-down" data-aos-duration="1000">PhD Student at the University of Oklahoma</h2>
+
+        <a class="a-link a-link-mail" href="mailto:tatiana.a.abdelnaim-1@ou.edu" data-aos="zoom-out" data-aos-duration="1000">
+            <span>
+                <i class="fa-solid fa-envelope"></i> tatiana.a.abdelnaim-1@ou.edu
+            </span>
+        </a>
+        
+        <div class="header__files" data-aos="zoom-out" data-aos-duration="1000">
+            <a class="a-button" href="CV.pdf?v=15.0.0" target="_blank">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                My CV
+            </a>
+            <a class="a-button" href="Poster.pdf?v=2.0.0" target="_blank">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                My Poster
+            </a>
+        </div>
     </header>
 
-    <main class="container-fluid">
-        <div class="row summary">
-            <div class="col-lg-4 col-md-5 profile-wrapper" data-aos="zoom-out" data-aos-duration="1000">
-                <img src="headshot.jpg" alt="Tatiana's Headshot">
-                <a class="a-link a-link-mail" href="mailto:tatiana.a.abdelnaim-1@ou.edu"><span><i class="fa-solid fa-envelope"></i> tatiana.a.abdelnaim-1@ou.edu</span></a>
-                <a class="a-button" href="CV.pdf?v=15.0.0" target="_blank">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    My CV
-                </a>
-                <a class="a-button" href="Poster.pdf?v=2.0.0" target="_blank">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    My Poster
-                </a>
-                
-                <!-- <button type="button"></button> -->
-            </div>
+    <main>
 
-            <div class="col-lg-8 col-md-7 introduction" data-aos="zoom-in" data-aos-duration="1000">
-                <h3><span>Hello,</span><br> a bit about me:</h3>
-                <p>
+        <div class="container">
+
+            <div class="about" data-aos="fade-up" data-aos-duration="1000">
+                <h3 class="about__title"><span>Hello,</span><br> a bit about me:</h3>
+
+                <p class="about__details">
                     I am currently a fifth year PhD student in the mathematics department at the University of Oklahoma, working under the supervision of
                     <a class="a-link" href="https://math.ou.edu/~ppatzt/"><span>Dr. Peter Patzt</span></a>. 
                     I received my B.S in mathematics from the Lebanese University and my M.S. from the American University of Beirut.
                 </p>
-                <h4>Area of Interests</h4>
-                <ul>
+            </div>
+
+            <div class="research" data-aos="fade-up" data-aos-duration="1000">
+                <h4 class="section-title research__title">Research Interests</h4>
+                
+                <ul class="section-list research__list">
                     <li>Group Cohomology</li>
                     <li>Congruence subgroups of arithmetic groups</li>
                     <li>Steinberg module</li>
                     <li>Homological Stability</li>
                 </ul>
-                <h4>Research Paper</h4>
-                <ul>
+            </div>
+
+            <div class="publications" data-aos="fade-up" data-aos-duration="1000">
+                <h4 class="section-title publications__title">Research Papers</h4>
+                <ul class="section-list publications__list">
                     <li>
                         Top-dimensional rational cohomology of &Gamma;<sub>0,n</sub>(p) <a class="a-link"
                         href="https://arxiv.org/abs/2605.23526"
@@ -86,18 +105,35 @@
                         </a>
                     </li>
                 </ul> 
-                    
-                <p>
-                    As part of the 
-                    <a class="a-link" href="https://websites.umich.edu/~jchw/SummerSchool2026/SummerSchool2026.html"><span>Configuration Spaces Summer School</span></a>,
-                    I wrote expository notes on the homological stability for unordered configuration spaces using Arnol'd Segal filtration of symmetric spaces, which are available 
-                    <a class="a-link" href="Homological Stability.pdf?v=1.0.0" target="_blank"><span>here</span></a>.
-                </p> 
             </div>
-         </main>
-    <footer>
-        
-    </footer>
+
+            <div class="notes" data-aos="fade-up" data-aos-duration="1000">
+                <h4 class="section-title notes__title">Notes</h4>
+                <ul class="section-list notes__list">
+                    <li>
+                        As part of the 
+                        <a class="a-link" href="https://websites.umich.edu/~jchw/SummerSchool2026/SummerSchool2026.html"><span>Configuration Spaces Summer School</span></a>,
+                        I wrote expository notes on the Homological stability for unordered configuration spaces using Arnol'd Segal filtration of symmetric spaces, which are available 
+                        <a class="a-link" href="Homological Stability.pdf?v=1.0.0" target="_blank"><span>here</span></a>.
+                    </li>
+                </ul> 
+            </div>
+
+            <div class="outreach" data-aos="fade-up" data-aos-duration="1000">
+                <h4 class="section-title outreach__title">Outreach & Activities</h4>
+                <ul class="section-list outreach__list">
+                    <li class="outreach__list-item">
+                        <img src="awm.jpeg?v=1.0.0" alt="Tatiana in AWM">
+                        <p>In 2023, I co-founded the Association for Women in Mathematics chapter at the University of Oklahoma. This is me representing the chapter at Curiousiday at the Sam Noble Oklahoma Museum of Natural History, where we organized math outreach activities for visitors.</p>
+                    </li>
+                </ul>
+                
+            </div>
+
+        </div>
+    </main>
+    
+    <footer></footer>
 
 </body>
 </html>

@@ -66,6 +66,7 @@
 body {
     overflow-x: hidden !important;
     background-color: var(--white);
+    background-color: var(--gray);
     font-family: "Inter", sans-serif;
 }
 
@@ -160,7 +161,10 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 2rem;
+    /* margin-top: 2rem; */
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+    background-color: var(--white);
 }
 
 .header__title {
@@ -198,8 +202,8 @@ body {
 }
 
 main {
-    padding: 2rem 0;
-    margin-top: 1.5rem;
+    padding: 2rem 0 6rem;
+    /* margin-top: 1.5rem; */
     background-color: var(--gray);
 }
 

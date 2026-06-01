@@ -90,6 +90,7 @@ body {
 
 .a-link-mail span {
     color: var(--blue);
+    font-size: 0.8rem;
     background-image: linear-gradient(var(--blue), var(--blue));
 }
 
@@ -276,7 +277,7 @@ main {
     justify-content: center;
     align-items: flex-start;
     gap: 1.5rem;
-    font-size: 1.5rem;
+    font-size: 1.5rem !important;
     color: var(--blue);
 }
 

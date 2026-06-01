@@ -276,6 +276,8 @@ main {
     justify-content: center;
     align-items: flex-start;
     gap: 1.5rem;
+    font-size: 1.5rem;
+    color: var(--blue);
 }
 
 .outreach__list-item img {
@@ -285,11 +287,8 @@ main {
 }
 
 .outreach__list-item p {
-    font-size: 1.5rem;
-    text-align: justify;
-    text-justify: inter-word;
+    margin-bottom: 1rem;
 }
-
 @media screen and (max-width: 767px){
 
     .header__title {

@@ -231,8 +231,8 @@ main {
 .section-title {
     font-family: "Merriweather", serif;
     position: relative;
-    font-size: 2rem;
-    margin: 2rem 0 1.5rem;
+    font-size: 1.5rem;
+    margin: 1.5rem 0 1.5rem;
     color: var(--blue);
     padding-bottom: 0.75rem;
 }
@@ -264,7 +264,7 @@ main {
 
 .section-list li {
     color: var(--blue);
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 .outreach__list {
@@ -277,7 +277,7 @@ main {
     justify-content: center;
     align-items: flex-start;
     gap: 1.5rem;
-    font-size: 1.5rem !important;
+    font-size: 1.2rem !important;
     color: var(--blue);
 }
 

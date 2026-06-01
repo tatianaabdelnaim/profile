@@ -285,6 +285,7 @@ main {
 }
 
 .outreach__list-item p {
+    font-size: 1.5rem;
     text-align: justify;
     text-justify: inter-word;
 }
@@ -292,11 +293,11 @@ main {
 @media screen and (max-width: 767px){
 
     .header__title {
-        font-size: 3rem;
+        font-size: 1.75rem;
     }
 
     .header__subtitle {
-        font-size: 1.375rem;
+        font-size: 0.75rem;
     }
 
     .outreach__list {
@@ -313,13 +314,13 @@ main {
 @media screen and (max-width: 575px){
 
     .header__title {
-        font-size: 2rem;
+        font-size: 1.75rem;
         letter-spacing: 2px;
         margin-bottom: 0.5rem;
     }
 
     .header__subtitle {
-        font-size: 1.25rem;
+        font-size: 0.75rem;
     }
 
 }

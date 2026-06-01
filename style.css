@@ -169,7 +169,7 @@ body {
 
 .header__title {
     font-family: "Merriweather", serif;
-    font-size: 2.25rem;
+    font-size: 1.75rem;
     color: var(--black);
     letter-spacing: 0.25rem;
     text-align: center;
@@ -179,7 +179,7 @@ body {
 
 .header__subtitle {
     font-family: "Inter", sans-serif;
-    font-size: 1rem;
+    font-size: 0.75rem;
     text-align: center;
     color: var(--red);
     font-style: italic;
@@ -215,7 +215,7 @@ main {
 }
 
 .about__title span {
-    font-size: 3rem;
+    font-size: 2rem;
     color: var(--red);
 }
 

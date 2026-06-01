@@ -3,3 +3,6 @@ $(document).ready(function(){
         once: true
     });
 });
+AOS.init({
+    once: true
+});

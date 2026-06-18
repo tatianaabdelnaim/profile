@@ -166,6 +166,7 @@ body {
     padding-top: 2rem;
     padding-bottom: 1.5rem;
     background-color: var(--white);
+    overflow: hidden;
 }
 
 .header__title {
@@ -180,7 +181,7 @@ body {
 
 .header__subtitle {
     font-family: "Inter", sans-serif;
-    font-size: 0.9rem !important;
+    font-size: 0.9rem;
     text-align: center;
     color: var(--red);
     font-style: italic;
@@ -203,9 +204,30 @@ body {
 }
 
 main {
-    padding: 2rem 0 6rem;
+    padding: 2rem 0;
     /* margin-top: 1.5rem; */
     background-color: var(--gray);
+}
+
+.custom-nav-tabs {
+    font-family: "Merriweather", serif;
+    border-bottom: solid 1px var(--red-secondary) !important;
+}
+
+.custom-nav-tabs .nav-link {
+    color: var(--red) !important;
+}
+
+.custom-nav-tabs .nav-link:hover,
+.custom-nav-tabs .nav-link:focus {
+    border-color: var(--red-secondary) !important;
+}
+
+.custom-nav-tabs .nav-link.active {
+    color: var(--blue) !important;
+    background-color: var(--gray) !important;
+    border-color: var(--red-secondary) !important;
+    border-bottom-color: var(--gray) !important;
 }
 
 .about__title {
@@ -277,8 +299,6 @@ main {
     justify-content: center;
     align-items: flex-start;
     gap: 1.5rem;
-    font-size: 1.2rem !important;
-    color: var(--blue);
 }
 
 .outreach__list-item img {
@@ -290,6 +310,7 @@ main {
 .outreach__list-item p {
     margin-bottom: 1rem;
 }
+
 @media screen and (max-width: 767px){
 
     .header__title {

@@ -1,8 +1,6 @@
 $(document).ready(function(){
     AOS.init({
-        once: true
+        once: true,
+        offset: 20
     });
-});
-AOS.init({
-    once: true
 });
